@@ -9,6 +9,5 @@ cd ..
 fakeroot debian/rules clean
 fakeroot debian/rules binary
 
-set +e
-cp -f ../*.deb .
-cp -f ../*.ddeb .
+set +eu
+cp -f ../*.deb ../*.ddeb . || true

@@ -13,7 +13,7 @@ mk-build-deps --install --remove \
   --tool='apt-get -o Debug::pkgProblemResolver=yes --no-install-recommends --yes' \
   debian/control
 
-apt install ca-certificates curl
+apt install -y ca-certificates curl
 
 # Install the latest golang manually
 # https://github.com/canha/golang-tools-install-script

@@ -4,3 +4,6 @@
 [submodule "mysqld_exporter/mysqld_exporter"]
 	path = mysqld_exporter/mysqld_exporter
 	url = git@github.com:prometheus/mysqld_exporter.git
+[submodule "nginx-vts-exporter/nginx-vts-exporter"]
+	path = nginx-vts-exporter/nginx-vts-exporter
+	url = git@github.com:hnlq715/nginx-vts-exporter.git

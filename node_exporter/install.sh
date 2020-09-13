@@ -5,4 +5,4 @@ set -eux
 SCRIPT_PATH=$(cd $(dirname $(readlink -f $0)) && pwd)
 cd ${SCRIPT_PATH}
 
-env --chdir=${SCRIPT_PATH}/node_exporter go mod download
+cp ${GOPATH}/bin/node_exporter /usr/bin

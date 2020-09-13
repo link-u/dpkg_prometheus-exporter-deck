@@ -11,4 +11,4 @@ Vcs-Browser: https://github.com/link-u/dpkg_prometheus-exporter-deck.git
 Package: prometheus-exporter-deck
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: The strongest deck of prometheus exporterss.
+Description: The strongest deck of prometheus exporters.

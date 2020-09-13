@@ -9,5 +9,4 @@ cd ..
 eval "$(go env)"
 
 fakeroot debian/rules clean
-fakeroot debian/rules configure
 fakeroot debian/rules binary

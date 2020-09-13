@@ -9,5 +9,5 @@ cd ..
 fakeroot debian/rules clean
 fakeroot debian/rules binary
 
-cp ../*.deb .
-cp ../*.ddeb .
+cp -f ../*.deb .
+cp -f ../*.ddeb .

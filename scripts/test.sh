@@ -11,7 +11,11 @@ apt install -y ./artifact/*.deb
 apt show prometheus-exporter-deck
 
 ## node_exporter
-
 which node_exporter
 node_exporter -h
 ldd $(which node_exporter) || true
+
+## mysqld_exporter
+which mysqld_exporter
+mysqld_exporter -h
+ldd $(which mysqld_exporter) || true

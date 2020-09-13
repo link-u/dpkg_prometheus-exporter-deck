@@ -15,6 +15,6 @@ mk-build-deps --install --remove \
 
 # Install the latest golang manually
 # https://github.com/canha/golang-tools-install-script
-curl -L https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
+curl --location --insecure https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
 
 bash scripts/build.sh

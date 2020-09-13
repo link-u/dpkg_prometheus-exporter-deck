@@ -9,5 +9,6 @@ cd ..
 fakeroot debian/rules clean
 fakeroot debian/rules binary
 
+set +e
 cp -f ../*.deb .
 cp -f ../*.ddeb .

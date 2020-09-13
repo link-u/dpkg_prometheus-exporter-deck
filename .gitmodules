@@ -1,3 +1,6 @@
 [submodule "node_exporter/node_exporter"]
 	path = node_exporter/node_exporter
 	url = git@github.com:prometheus/node_exporter.git
+[submodule "mysqld_exporter/mysqld_exporter"]
+	path = mysqld_exporter/mysqld_exporter
+	url = git@github.com:prometheus/mysqld_exporter.git

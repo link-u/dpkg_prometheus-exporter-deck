@@ -9,12 +9,6 @@ debian_ldflags:=$(shell dpkg-buildflags --get LDFLAGS) -fPIC
 %:
 	dh $@ --without autoreconf
 
-override_dh_auto_configure:
-	dh_testdir
-	pwd
-	ls -alh
-	bash node_exporter/configure.sh
-
 override_dh_auto_build:
 	dh_testdir
 	pwd
@@ -33,4 +27,4 @@ override_dh_auto_install:
 	ls -alh
 	bash node_exporter/install.sh
 
-.PHONY: override_dh_auto_configure override_dh_auto_build override_dh_auto_clean
+.PHONY: override_dh_auto_build override_dh_auto_clean

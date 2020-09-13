@@ -33,8 +33,8 @@ jobs:
         with:
           name: ${{ matrix.codename }}
           path: |
-            gpac/gpac*.deb
-            gpac/gpac*.ddeb
+            *.deb
+            *.ddeb
 
   test:
     needs: build
@@ -118,7 +118,7 @@ jobs:
         shell: bash
         run: |
           printenv DEPLOY_SCRIPT | base64 -d > deploy.sh
-          bash deploy.sh upload "${{ matrix.codename }}" "gpac" "${{ matrix.codename }}"
+          bash deploy.sh upload "${{ matrix.codename }}" "prometheus-exporter-deck" "${{ matrix.codename }}"
         env:
           DEPLOY_SCRIPT: ${{ secrets.YOROZU_DEPLOY_SCRIPT }}
 

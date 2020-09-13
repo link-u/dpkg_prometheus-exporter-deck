@@ -3,7 +3,6 @@ set -e
 
 case "$1" in
   purge)
-    rm -rf /var/lib/nginx /var/log/nginx /etc/nginx /var/cache/nginx
     ;;
 
   upgrade|remove|failed-upgrade|abort-install|abort-upgrade|disappear)

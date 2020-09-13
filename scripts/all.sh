@@ -13,4 +13,8 @@ mk-build-deps --install --remove \
   --tool='apt-get -o Debug::pkgProblemResolver=yes --no-install-recommends --yes' \
   debian/control
 
+# Install golang manually
+
+curl -L https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
+
 bash scripts/build.sh

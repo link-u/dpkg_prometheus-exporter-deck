@@ -2,7 +2,7 @@ Source: prometheus-exporter-deck
 Section: utils
 Priority: optional
 Maintainer: Ryo Hirafuji <ryo.hirafuji@link-u.co.jp>
-Build-Depends: debhelper (>= 10), curl
+Build-Depends: debhelper (>= 10)
 Standards-Version: 4.1.2
 Homepage: https://github.com/link-u/dpkg_prometheus-exporter-deck
 Vcs-Git: https://github.com/link-u/dpkg_prometheus-exporter-deck.git

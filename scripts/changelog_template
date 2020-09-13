@@ -1,5 +1,5 @@
-gpac (%VERSION%) stable; urgency=low
+prometheus-exporter-deck (%VERSION%) stable; urgency=low
 
-  * Initial release - see https://github.com/gpac/gpac/releases for more details
+  * Initial release - see https://github.com/link-u/prometheus-exporter-deck/releases for more details
 
- -- Jean Le Feuvre <jeanlf@gpac.io>  %DATE%
+ -- Ryo Hirafuji <ryo.hirafuji@link-u.co.jp>  %DATE%

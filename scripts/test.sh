@@ -8,9 +8,9 @@ root_dir=$(cd ${scripts_dir} && cd .. && pwd)
 cd ${root_dir}
 
 apt install -y ./artifact/*.deb
-apt show gpac
-which MP4Box
+apt show prometheus-exporter-deck
+which node_exporter
 
-MP4Box -version
+node_exporter -h
 
-ldd $(which MP4Box)
+ldd $(which node_exporter)

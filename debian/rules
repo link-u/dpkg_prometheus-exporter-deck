@@ -12,19 +12,19 @@ debian_ldflags:=$(shell dpkg-buildflags --get LDFLAGS) -fPIC
 override_dh_auto_build:
 	dh_testdir
 	pwd
-	ls -alh
+	find .
 	bash node_exporter/build.sh
 
 override_dh_auto_clean:
 	dh_testdir
 	pwd
-	ls -alh
+	find .
 	bash node_exporter/clean.sh
 
 override_dh_auto_install:
 	dh_testdir
 	pwd
-	ls -alh
+	find .
 	bash node_exporter/install.sh
 
 .PHONY: override_dh_auto_build override_dh_auto_clean

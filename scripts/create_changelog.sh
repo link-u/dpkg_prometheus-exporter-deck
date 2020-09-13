@@ -15,4 +15,4 @@ sed -i -r "s/%DATE%/$(LC_ALL=C TZ=JST-9 date '+%a, %d %b %Y %H:%M:%S %z')/g" deb
 # set debian package version
 version=$(git describe --tags || (echo -n "v0.0.0-" && git describe --always))
 dpkg_version=${version:1}.$(TZ=JST-9 date +%Y%m%d)+${codename}
-sed -i -r "s/%VERSION%/${dpkg_version}/g" gpac/debian/changelog
+sed -i -r "s/%VERSION%/${dpkg_version}/g" debian/changelog

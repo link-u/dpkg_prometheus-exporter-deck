@@ -13,4 +13,4 @@ which node_exporter
 
 node_exporter -h
 
-ldd $(which node_exporter)
+ldd $(which node_exporter) || true

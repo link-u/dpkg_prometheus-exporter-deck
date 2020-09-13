@@ -22,4 +22,8 @@ set +eux
 source /root/.bashrc
 set -eux
 
+export GOROOT="/opt/go"
+export PATH="${PATH}:${GOROOT}/bin"
+export GOPATH="$HOME/projects/go"
+export PATH="${PATH}:${GOPATH}/bin"
 bash --login scripts/build.sh

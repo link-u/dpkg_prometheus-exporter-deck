@@ -1,0 +1,5 @@
+gpac (%VERSION%) stable; urgency=low
+
+  * Initial release - see https://github.com/gpac/gpac/releases for more details
+
+ -- Jean Le Feuvre <jeanlf@gpac.io>  %DATE%

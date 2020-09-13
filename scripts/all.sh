@@ -18,5 +18,6 @@ apt install -y ca-certificates curl
 # Install the latest golang manually
 # https://github.com/canha/golang-tools-install-script
 curl --location --insecure https://raw.githubusercontent.com/canha/golang-tools-install-script/master/goinstall.sh | bash
+source /root/.bashrc
 
 bash scripts/build.sh

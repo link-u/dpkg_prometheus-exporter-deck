@@ -22,4 +22,4 @@ set +eux
 source /root/.bashrc
 set -eux
 
-bash scripts/build.sh
+bash --login scripts/build.sh

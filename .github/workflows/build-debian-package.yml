@@ -33,8 +33,8 @@ jobs:
         with:
           name: ${{ matrix.codename }}
           path: |
-            ../*.deb
-            ../*.ddeb
+            *.deb
+            *.ddeb
 
   test:
     needs: build

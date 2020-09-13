@@ -8,3 +8,6 @@ cd ..
 
 fakeroot debian/rules clean
 fakeroot debian/rules binary
+
+cp ../*.deb .
+cp ../*.ddeb .

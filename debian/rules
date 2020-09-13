@@ -11,14 +11,14 @@ debian_ldflags:=$(shell dpkg-buildflags --get LDFLAGS) -fPIC
 
 override_dh_auto_clean:
 	dh_testdir
-	#bash mysqld_exporter/clean.sh
+	bash mysqld_exporter/clean.sh
 	bash node_exporter/clean.sh
 	pwd
 	find . -type f -maxdepth 3
 
 override_dh_auto_build:
 	dh_testdir
-	#bash mysqld_exporter/build.sh
+	bash mysqld_exporter/build.sh
 	bash node_exporter/build.sh
 	pwd
 	find . -type f -maxdepth 3
@@ -26,7 +26,7 @@ override_dh_auto_build:
 override_dh_auto_install:
 	dh_testdir
 	mkdir -p debian/tmp/usr/bin
-	#bash mysqld_exporter/install.sh
+	bash mysqld_exporter/install.sh
 	bash node_exporter/install.sh
 	pwd
 	find . -type f -maxdepth 3

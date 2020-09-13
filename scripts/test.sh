@@ -9,8 +9,9 @@ cd ${root_dir}
 
 apt install -y ./artifact/*.deb
 apt show prometheus-exporter-deck
+
+## node_exporter
+
 which node_exporter
-
 node_exporter -h
-
 ldd $(which node_exporter) || true

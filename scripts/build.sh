@@ -6,7 +6,5 @@ SCRIPT_PATH=$(cd $(dirname $(readlink -f $0)) && pwd)
 cd ${SCRIPT_PATH}
 cd ..
 
-eval "$(go env)"
-
 fakeroot debian/rules clean
 fakeroot debian/rules binary

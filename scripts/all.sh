@@ -22,6 +22,8 @@ set +eux
 source /root/.bashrc
 set -eux
 
+go env
+
 export GOROOT="${HOME}/.go"
 export PATH="${PATH}:${GOROOT}/bin"
 export GOPATH="$HOME/go"

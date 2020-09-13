@@ -5,4 +5,4 @@ set -eux
 SCRIPT_PATH=$(cd $(dirname $(readlink -f $0)) && pwd)
 cd ${SCRIPT_PATH}
 
-cp ./node_exporter/node_exporter /usr/bin
+install ./node_exporter/node_exporter /usr/bin

@@ -8,6 +8,8 @@ We install exporters to our servers via debian package built by this project.
 
 ## Current exporters
 
+ - Meta
+   - exporter_exporter
  - Physical
    - node_expoter
  - RDBMS

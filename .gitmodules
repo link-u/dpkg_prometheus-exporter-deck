@@ -22,3 +22,6 @@
 [submodule "memcached_exporter/memcached_exporter"]
 	path = memcached_exporter/memcached_exporter
 	url = git@github.com:prometheus/memcached_exporter.git
+[submodule "exporter_exporter/exporter_exporter"]
+	path = exporter_exporter/exporter_exporter
+	url = git@github.com:QubitProducts/exporter_exporter.git

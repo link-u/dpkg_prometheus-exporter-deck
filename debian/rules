@@ -11,6 +11,7 @@ debian_ldflags:=$(shell dpkg-buildflags --get LDFLAGS) -fPIC
 
 override_dh_auto_clean:
 	dh_testdir
+	bash exporter_exporter/clean.sh
 	bash redis_exporter/clean.sh
 	bash php-fpm_exporter/clean.sh
 	bash nginx-vts-exporter/clean.sh
@@ -24,6 +25,7 @@ override_dh_auto_clean:
 
 override_dh_auto_build:
 	dh_testdir
+	bash exporter_exporter/build.sh
 	bash redis_exporter/build.sh
 	bash php-fpm_exporter/build.sh
 	bash nginx-vts-exporter/build.sh
@@ -38,6 +40,7 @@ override_dh_auto_build:
 override_dh_auto_install:
 	dh_testdir
 	mkdir -p debian/tmp/usr/bin
+	bash exporter_exporter/install.sh
 	bash redis_exporter/install.sh
 	bash php-fpm_exporter/install.sh
 	bash nginx-vts-exporter/install.sh

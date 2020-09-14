@@ -14,6 +14,12 @@ TBD
 
 # Other exporters?
 
+## High Priority
+
  - [povilasv/systemd_exporter: Exporter for systemd unit metrics](https://github.com/povilasv/systemd_exporter)
  - [carlpett/zookeeper_exporter: Prometheus exporter for Zookeeper](https://github.com/carlpett/zookeeper_exporter)
 
+## Low Priority
+
+ - [gree-gorey/bash-exporter: Simple & minimalistic Prometheus exporter for bash scripts, written in Go](https://github.com/gree-gorey/bash-exporter)
+ - [ricoberger/script_exporter: Prometheus exporter to execute scripts and collect metrics from the output or the exit status.](https://github.com/ricoberger/script_exporter)

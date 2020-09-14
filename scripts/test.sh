@@ -21,9 +21,14 @@ mysqld_exporter -h
 ldd $(which mysqld_exporter) || true
 
 ## postgres_exporter
-which postgres_exporter
-postgres_exporter -h
-ldd $(which postgres_exporter) || true
+#which postgres_exporter
+#postgres_exporter -h
+#ldd $(which postgres_exporter) || true
+
+## sql_exporter
+which sql_exporter
+sql_exporter -h
+ldd $(which sql_exporter) || true
 
 ## nginx-vts-exporter
 which nginx-vts-exporter

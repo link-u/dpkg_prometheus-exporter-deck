@@ -13,3 +13,6 @@
 [submodule "redis_exporter/redis_exporter"]
 	path = redis_exporter/redis_exporter
 	url = git@github.com:oliver006/redis_exporter.git
+[submodule "postgres_exporter/postgres_exporter"]
+	path = postgres_exporter/postgres_exporter
+	url = git@github.com:wrouesnel/postgres_exporter.git

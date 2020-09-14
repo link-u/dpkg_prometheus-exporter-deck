@@ -14,6 +14,7 @@ override_dh_auto_clean:
 	bash redis_exporter/clean.sh
 	bash php-fpm_exporter/clean.sh
 	bash nginx-vts-exporter/clean.sh
+	bash postgres_exporter/clean.sh
 	bash mysqld_exporter/clean.sh
 	bash node_exporter/clean.sh
 	pwd
@@ -25,6 +26,7 @@ override_dh_auto_build:
 	bash php-fpm_exporter/build.sh
 	bash nginx-vts-exporter/build.sh
 	bash mysqld_exporter/build.sh
+	bash postgres_exporter/build.sh
 	bash node_exporter/build.sh
 	pwd
 	find . -type f -maxdepth 3
@@ -36,6 +38,7 @@ override_dh_auto_install:
 	bash php-fpm_exporter/install.sh
 	bash nginx-vts-exporter/install.sh
 	bash mysqld_exporter/install.sh
+	bash postgres_exporter/install.sh
 	bash node_exporter/install.sh
 	pwd
 	find . -type f -maxdepth 3

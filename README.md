@@ -28,7 +28,10 @@ Please use our debian package repository.
 
 ## How to build debian package?
 
-TBD
+```bash
+bash all.sh
+ls ../*.deb
+```
 
 # Other exporters?
 

@@ -19,3 +19,23 @@ ldd $(which node_exporter) || true
 which mysqld_exporter
 mysqld_exporter -h
 ldd $(which mysqld_exporter) || true
+
+## postgres_exporter
+which postgres_exporter
+postgres_exporter -h
+ldd $(which postgres_exporter) || true
+
+## nginx-vts-exporter
+which nginx-vts-exporter
+nginx-vts-exporter -h
+ldd $(which nginx-vts-exporter) || true
+
+## php-fpm_exporter
+which php-fpm_exporter
+php-fpm_exporter -h
+ldd $(which php-fpm_exporter) || true
+
+## redis_exporter
+which redis_exporter
+redis_exporter -h
+ldd $(which redis_exporter) || true

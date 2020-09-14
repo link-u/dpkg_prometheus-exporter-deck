@@ -10,3 +10,6 @@
 [submodule "php-fpm_exporter/php-fpm_exporter"]
 	path = php-fpm_exporter/php-fpm_exporter
 	url = git@github.com:hipages/php-fpm_exporter.git
+[submodule "redis_exporter/redis_exporter"]
+	path = redis_exporter/redis_exporter
+	url = git@github.com:oliver006/redis_exporter.git

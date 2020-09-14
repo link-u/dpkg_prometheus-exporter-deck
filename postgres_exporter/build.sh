@@ -9,5 +9,3 @@ cd postgres_exporter
 export CGO_ENABLED=1
 go mod vendor
 go run mage.go binary
-
-cp -vf "${GOPATH}/src/github.com/wrouesnel/postgres_exporter/postgres_exporter" .

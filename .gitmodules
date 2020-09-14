@@ -19,3 +19,6 @@
 [submodule "sql_exporter/sql_exporter"]
 	path = sql_exporter/sql_exporter
 	url = git@github.com:justwatchcom/sql_exporter.git
+[submodule "memcached_exporter/memcached_exporter"]
+	path = memcached_exporter/memcached_exporter
+	url = git@github.com:prometheus/memcached_exporter.git

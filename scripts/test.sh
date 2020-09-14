@@ -44,3 +44,8 @@ ldd $(which php-fpm_exporter) || true
 which redis_exporter
 redis_exporter -h
 ldd $(which redis_exporter) || true
+
+## memcached_exporter
+which memcached_exporter
+memcached_exporter -h
+ldd $(which memcached_exporter) || true

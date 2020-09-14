@@ -16,3 +16,6 @@
 [submodule "postgres_exporter/postgres_exporter"]
 	path = postgres_exporter/postgres_exporter
 	url = git@github.com:wrouesnel/postgres_exporter.git
+[submodule "sql_exporter/sql_exporter"]
+	path = sql_exporter/sql_exporter
+	url = git@github.com:justwatchcom/sql_exporter.git

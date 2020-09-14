@@ -7,3 +7,6 @@
 [submodule "nginx-vts-exporter/nginx-vts-exporter"]
 	path = nginx-vts-exporter/nginx-vts-exporter
 	url = git@github.com:hnlq715/nginx-vts-exporter.git
+[submodule "php-fpm_exporter/php-fpm_exporter"]
+	path = php-fpm_exporter/php-fpm_exporter
+	url = git@github.com:hipages/php-fpm_exporter.git

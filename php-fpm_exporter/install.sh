@@ -4,6 +4,5 @@ set -eux
 
 SCRIPT_PATH=$(cd $(dirname $(readlink -f $0)) && pwd)
 cd ${SCRIPT_PATH}
-cd nginx-vts-exporter
 
-go clean ./...
+install -D -m 755 ./php-fpm_exporter/php-fpm_exporter ../debian/tmp/usr/bin

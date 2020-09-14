@@ -7,5 +7,6 @@ cd ${SCRIPT_PATH}
 cd postgres_exporter
 
 export CGO_ENABLED=1
+go mod init
 go mod vendor
 go run mage.go binary

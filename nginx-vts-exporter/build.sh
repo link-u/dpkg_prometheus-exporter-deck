@@ -7,4 +7,6 @@ cd ${SCRIPT_PATH}
 cd nginx-vts-exporter
 
 go mod vendor
+make || true
+go mod vendor
 make

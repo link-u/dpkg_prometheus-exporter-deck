@@ -4,6 +4,7 @@ set -eux
 
 SCRIPT_PATH=$(cd $(dirname $(readlink -f $0)) && pwd)
 cd ${SCRIPT_PATH}
+cd nginx-vts-exporter
 
-env --chdir=${SCRIPT_PATH}/nginx-vts-exporter go mod download
-env --chdir=${SCRIPT_PATH}/nginx-vts-exporter make all
+#go mod download
+make

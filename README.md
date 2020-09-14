@@ -11,3 +11,9 @@ Please use our debian package repository.
 ## How to build debian package?
 
 TBD
+
+# Other exporters?
+
+ - [povilasv/systemd_exporter: Exporter for systemd unit metrics](https://github.com/povilasv/systemd_exporter)
+ - [carlpett/zookeeper_exporter: Prometheus exporter for Zookeeper](https://github.com/carlpett/zookeeper_exporter)
+

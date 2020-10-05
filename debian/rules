@@ -54,7 +54,7 @@ override_dh_auto_install:
 	bash node_exporter/install.sh
 	# Install other static files.
 	@echo "Install these files:"
-	@cd files-to-install && find . -type f
+	@cd files-to-install && find . -type f -exec echo install -m 0644 -o nobody -g nogroup -D {} debian/tmp/{} \;
 	cd files-to-install && find . -type f -exec install -m 0644 -o nobody -g nogroup -D {} debian/tmp/{} \;
 	pwd
 	cd debian/tmp && find .

@@ -55,4 +55,4 @@ override_dh_auto_install:
 	# Install other static files.
 	install -m 0644 -o nobody -g nogroup -D -d files-to-install debian/tmp
 	pwd
-	find . -type f -maxdepth 3
+	cd debian/tmp && find .

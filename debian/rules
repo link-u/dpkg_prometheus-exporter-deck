@@ -53,6 +53,6 @@ override_dh_auto_install:
 	bash memcached_exporter/install.sh
 	bash node_exporter/install.sh
 	# Install other static files.
-	cd files-to-install && find . -type f -exec install -m 0644 -o nobody -g nogroup -D {} ../debian/tmp/{} \;
+	install -m 0644 -o nobody -g nogroup -D -d files-to-install debian/tmp
 	pwd
 	find . -type f -maxdepth 3

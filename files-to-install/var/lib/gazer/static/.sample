@@ -1,0 +1,3 @@
+# HELP answer_to_everything It's not a fake news. Please google it. Everyone says so.
+# TYPE answer_to_everything gauge
+answer_to_everything{scope="universe",env="prod"} 42

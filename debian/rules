@@ -52,5 +52,7 @@ override_dh_auto_install:
 	bash sql_exporter/install.sh
 	bash memcached_exporter/install.sh
 	bash node_exporter/install.sh
+	# Install other static files.
+	install -D files-to-install debian/tmp
 	pwd
 	find . -type f -maxdepth 3

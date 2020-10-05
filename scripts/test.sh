@@ -7,6 +7,8 @@ scripts_dir=$(cd $(dirname $(readlink -f $0)) && pwd)
 root_dir=$(cd ${scripts_dir} && cd .. && pwd)
 cd ${root_dir}
 
+dpkg-deb --contents ./artifact/*.deb
+
 apt install -y ./artifact/*.deb
 apt show prometheus-exporter-deck
 

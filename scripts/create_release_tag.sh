@@ -14,9 +14,9 @@ function __readlink_f() {
 }
 
 SCRIPT_PATH=$(cd $(dirname $(__readlink_f $0)) && pwd)
-cd ${SCRIPT_PATH}
+cd "${SCRIPT_PATH}"
 cd ..
 
 tag=$(git describe --tags || (echo -n "v0.0.0-" && git describe --always))
-git tag ${tag}
-git push origin ${tag}
+git tag "${tag}"
+git push origin "${tag}"

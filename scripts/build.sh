@@ -3,7 +3,7 @@
 set -eux
 
 SCRIPT_PATH=$(cd $(dirname $(readlink -f $0)) && pwd)
-cd ${SCRIPT_PATH}
+cd "${SCRIPT_PATH}"
 cd ..
 
 fakeroot debian/rules clean

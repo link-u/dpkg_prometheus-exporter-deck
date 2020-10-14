@@ -13,7 +13,7 @@ function __readlink_f() {
   /bin/echo "$(pwd -P)/$(basename "${filepath}")"
 }
 
-SCRIPT_PATH=$(cd $(dirname $(__readlink_f $0)) && pwd)
+SCRIPT_PATH=$(cd "$(dirname "$(__readlink_f "$0")")" && pwd)
 cd "${SCRIPT_PATH}"
 cd ..
 

@@ -2,7 +2,7 @@
 
 set -eux
 
-SCRIPT_PATH=$(cd $(dirname $(readlink -f $0)) && pwd)
+SCRIPT_PATH="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
 cd "${SCRIPT_PATH}"
 cd ..
 
@@ -15,7 +15,7 @@ mk-build-deps --install --remove \
 
 apt install -y ca-certificates curl
 
-if which go; then
+if command -v go; then
   echo "We already have golang:"
   go env
 else

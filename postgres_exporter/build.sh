@@ -8,5 +8,7 @@ cd postgres_exporter
 
 export CGO_ENABLED=1
 apt-get install -y postgresql-client-common
-./gh-assets-clone.sh
-go run mage.go -v all
+go mod init
+go mod vendor
+go get github.com/wrouesnel/postgres_exporter
+go run mage.go binary

@@ -17,7 +17,7 @@ override_dh_auto_clean:
 	bash php-fpm_exporter/clean.sh
 	bash nginx-vts-exporter/clean.sh
 	bash mysqld_exporter/clean.sh
-	#bash postgres_exporter/clean.sh
+	bash postgres_exporter/clean.sh
 	bash sql_exporter/clean.sh
 	bash memcached_exporter/clean.sh
 	bash node_exporter/clean.sh
@@ -32,7 +32,7 @@ override_dh_auto_build:
 	bash php-fpm_exporter/build.sh
 	bash nginx-vts-exporter/build.sh
 	bash mysqld_exporter/build.sh
-	#bash postgres_exporter/build.sh
+	bash postgres_exporter/build.sh
 	bash sql_exporter/build.sh
 	bash memcached_exporter/build.sh
 	bash node_exporter/build.sh
@@ -48,7 +48,7 @@ override_dh_auto_install:
 	bash php-fpm_exporter/install.sh
 	bash nginx-vts-exporter/install.sh
 	bash mysqld_exporter/install.sh
-	#bash postgres_exporter/install.sh
+	bash postgres_exporter/install.sh
 	bash sql_exporter/install.sh
 	bash memcached_exporter/install.sh
 	bash node_exporter/install.sh

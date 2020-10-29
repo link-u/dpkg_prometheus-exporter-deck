@@ -34,8 +34,8 @@ mysqld_exporter -h
 shouldBeSingleBinary "mysqld_exporter"
 
 ## postgres_exporter
-#command -v postgres_exporter
-#postgres_exporter -h
+command -v postgres_exporter
+postgres_exporter -h
 #shouldBeSingleBinary "postgres_exporter"
 
 ## sql_exporter
@@ -56,7 +56,7 @@ shouldBeSingleBinary "php-fpm_exporter"
 ## redis_exporter
 command -v redis_exporter
 redis_exporter -h
-shouldBeSingleBinary "redis_exporter"
+#shouldBeSingleBinary "redis_exporter"
 
 ## memcached_exporter
 command -v memcached_exporter

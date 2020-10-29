@@ -25,11 +25,11 @@ jobs:
       - name: Build debian package
         uses: link-u/execute-on-separated-ubuntu@master
         with:
-          script: scripts/all.sh
+          script: prometheus-exporter-deck/scripts/all.sh
           on: ${{ matrix.codename }}
 
       - name: Upload result
-        uses: actions/upload-artifact@v2
+        uses: prometheus-exporter-deck/actions/upload-artifact@v2
         with:
           name: ${{ matrix.codename }}
           path: |
@@ -52,7 +52,7 @@ jobs:
       - name: Check debian package
         uses: link-u/execute-on-separated-ubuntu@master
         with:
-          script: scripts/test.sh
+          script: prometheus-exporter-deck/scripts/test.sh
           on: ${{ matrix.codename }}
 
   release:

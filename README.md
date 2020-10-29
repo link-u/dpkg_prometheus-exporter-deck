@@ -14,6 +14,7 @@ We install exporters to our servers via debian package built by this project.
    - node_expoter
  - RDBMS
    - mysqld_exporter
+   - postgres_exporter
    - sql_exporter
  - NoSQL
    - redis_expoter

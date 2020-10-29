@@ -10,6 +10,6 @@ apt-get install -y postgresql-client-common
 
 export CGO_ENABLED=1
 export GO111MODULE=off
+go get -tags mage,ignore github.com/wrouesnel/postgres_exporter
 go get github.com/magefile/mage
 go run mage.go
-go build -o postgres_exporter ./cmd/postgres_exporter

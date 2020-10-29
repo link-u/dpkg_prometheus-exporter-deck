@@ -10,4 +10,7 @@ apt-get install -y postgresql-client-common
 
 export CGO_ENABLED=1
 go mod init
-go build -mod=mod -o postgres_exporter ./cmd/postgres_exporter
+go build \
+  -mod=mod \
+  --ldflags '-linkmode external -extldflags "-static"' \
+  -o postgres_exporter ./cmd/postgres_exporter

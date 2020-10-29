@@ -56,7 +56,7 @@ shouldBeSingleBinary "php-fpm_exporter"
 ## redis_exporter
 command -v redis_exporter
 redis_exporter -h
-#shouldBeSingleBinary "redis_exporter"
+shouldBeSingleBinary "redis_exporter"
 
 ## memcached_exporter
 command -v memcached_exporter

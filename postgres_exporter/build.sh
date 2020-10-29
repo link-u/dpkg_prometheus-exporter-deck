@@ -2,11 +2,11 @@
 
 set -eux
 
-SCRIPT_PATH=$(cd $(dirname $(readlink -f $0)) && pwd)
+SCRIPT_PATH=$(cd $(dirname $0) && pwd)
 cd ${SCRIPT_PATH}
 cd postgres_exporter
 
 export CGO_ENABLED=1
-go mod init
-go mod vendor
 go run mage.go binary
+#go mod init || true
+#go build -mod=mod -o postgres_exporter ./cmd/postgres_exporter

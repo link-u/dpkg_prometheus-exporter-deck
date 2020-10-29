@@ -15,14 +15,14 @@ function shouldBeSingleBinary() {
 
 ## git リポジトリ上の root のパスを取得
 scripts_dir="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
-root_dir="$(cd "${scripts_dir}" && cd .. && pwd)"
+root_dir="$(cd "${scripts_dir}" && cd ../.. && pwd)"
 cd "${root_dir}"
 
-echo "::group::Directory structure"
+@echo "::group::Directory structure"
 find . 
-echo "::endgroup::"
+@echo "::endgroup::"
 
-echo "::group::Testing binaries"
+@echo "::group::Testing binaries"
 dpkg-deb --contents ./artifact/*.deb
 
 apt install -y ./artifact/*.deb
@@ -67,4 +67,4 @@ shouldBeSingleBinary "redis_exporter"
 command -v memcached_exporter
 memcached_exporter -h
 shouldBeSingleBinary "memcached_exporter"
-echo "::endgroup::"
+@echo "::endgroup::"

@@ -40,7 +40,7 @@ shouldBeSingleBinary "mysqld_exporter"
 
 ## postgres_exporter
 command -v postgres_exporter
-postgres_exporter -h
+postgres_exporter --help
 shouldBeSingleBinary "postgres_exporter"
 
 ## sql_exporter

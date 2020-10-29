@@ -7,4 +7,4 @@ cd ${SCRIPT_PATH}
 cd postgres_exporter
 
 apt-get install -y postgresql-client-common
-go build -o postgres_exporter github.com/wrouesnel/postgres_exporter/cmd/postgres_exporter
+go build -o postgres_exporter ./cmd/postgres_exporter

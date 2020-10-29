@@ -11,4 +11,5 @@ apt-get install -y postgresql-client-common
 go mod init
 go mod vendor
 go get github.com/wrouesnel/postgres_exporter/cmd/postgres_exporter
+go get github.com/magefile/mage/mage
 go run mage.go binary

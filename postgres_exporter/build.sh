@@ -8,5 +8,6 @@ cd postgres_exporter
 
 export CGO_ENABLED=1
 go mod init || true
-go build -mod=mod -o postgres_exporter ./cmd/postgres_exporter
-go run -mod=mod mage.go binary
+#go build -mod=mod -o postgres_exporter ./cmd/postgres_exporter
+go mod vendor
+go run -mod=readonly mage.go binary

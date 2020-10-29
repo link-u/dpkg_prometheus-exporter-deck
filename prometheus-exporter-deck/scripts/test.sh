@@ -1,6 +1,6 @@
 #! /bin/bash -eux
 
-set -eux
+set -eu
 
 function shouldBeSingleBinary() {
   local path
@@ -22,7 +22,7 @@ echo "::group::Directory structure"
 find . 
 echo "::endgroup::"
 
-echo "::group::Testing binaries"
+set -x
 dpkg-deb --contents ./artifact/*.deb
 
 apt install -y ./artifact/*.deb
@@ -67,4 +67,3 @@ shouldBeSingleBinary "redis_exporter"
 command -v memcached_exporter
 memcached_exporter -h
 shouldBeSingleBinary "memcached_exporter"
-echo "::endgroup::"

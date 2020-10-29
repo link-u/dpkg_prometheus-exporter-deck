@@ -29,7 +29,7 @@ jobs:
           on: ${{ matrix.codename }}
 
       - name: Upload result
-        uses: prometheus-exporter-deck/actions/upload-artifact@v2
+        uses: actions/upload-artifact@v2
         with:
           name: ${{ matrix.codename }}
           path: |

@@ -7,5 +7,6 @@ cd ${SCRIPT_PATH}
 cd postgres_exporter
 
 export CGO_ENABLED=1
-go get -u github.com/wrouesnel/postgres_exporter
-go run mage.go binary
+apt-get install -y postgresql-client-common
+./gh-assets-clone.sh
+go run mage.go -v all

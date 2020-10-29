@@ -10,5 +10,5 @@ export CGO_ENABLED=1
 apt-get install -y postgresql-client-common
 go mod init
 go mod vendor
-go get github.com/wrouesnel/postgres_exporter
+go get github.com/wrouesnel/postgres_exporter/cmd/postgres_exporter
 go run mage.go binary

@@ -55,6 +55,6 @@ override_dh_auto_install:
 	# Install other static files.
 	cd files-to-install && find . -type f -exec install -m 0644 -o nobody -g nogroup -D {} ../debian/tmp/{} \;
 	mkdir -p ../debian/tmp/usr/share/gazer/example
-	cd ../cradle_exporter/cradle_exporter/example/config/conf.d && find . -type f -exec install -m 0644 -o nobody -g nogroup -D {} ../../../../../prometheus-exporter-deck/debian/tmp/usr/share/gazer/example/{} \;
+	cd ../cradle_exporter/cradle_exporter/example/config/conf.d && find . -type f -exec install -m 0644 -o nobody -g nogroup -D {} ../../../../../prometheus-exporter-deck/debian/tmp/usr/share/gazer/example/config/{} \;
 	pwd
 	cd debian/tmp && find .

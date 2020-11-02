@@ -2,4 +2,5 @@
 /etc/gazer/conf.d
 /usr/share/gazer
 /usr/share/gazer/example
+/usr/share/gazer/example/config
 /var/lib/gazer

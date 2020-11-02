@@ -42,7 +42,7 @@ override_dh_auto_build:
 .PHONY: override_dh_auto_install
 override_dh_auto_install:
 	dh_testdir
-	mkdir -p debian/tmp/usr/bin
+	mkdir -p debian/tmp/usr/sbin
 	bash ../cradle_exporter/install.sh
 	bash ../redis_exporter/install.sh
 	bash ../php-fpm_exporter/install.sh

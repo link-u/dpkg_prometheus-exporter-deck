@@ -1,0 +1,9 @@
+---
+include_dirs:
+  - '/etc/gazer/conf.d'
+cli:
+  standard_log: false
+web:
+  listen_address: ':9231'
+  metric_path:    '/metrics'
+  probe_path:     '/probe'

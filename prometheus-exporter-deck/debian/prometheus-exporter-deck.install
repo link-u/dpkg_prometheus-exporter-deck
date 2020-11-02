@@ -1,2 +1,4 @@
+etc/gazer/*
 usr/sbin/*
+usr/share/gazer/example/*
 var/lib/gazer/*

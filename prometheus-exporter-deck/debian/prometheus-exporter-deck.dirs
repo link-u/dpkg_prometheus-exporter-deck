@@ -1,0 +1,5 @@
+/etc/gazer/
+/etc/gazer/conf.d
+/usr/share/gazer
+/usr/share/gazer/example
+/var/lib/gazer

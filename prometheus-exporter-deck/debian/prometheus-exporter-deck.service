@@ -3,8 +3,7 @@ Description=The strongest deck of prometheus exporters.
 After=syslog.target network.target remote-fs.target nss-lookup.target
 
 [Service]
-Type=forking
-PIDFile=/run/cradle_exporter.pid
+Type=simple
 ExecStartPre=/usr/sbin/cradle_exporter '--config=/etc/gazer/config.yml' -t
 ExecStart=/usr/sbin/cradle_exporter '--config=/etc/gazer/config.yml' '--pid-file=/run/cradle_exporter.pid'
 ExecReload=/bin/kill -s HUP $MAINPID
